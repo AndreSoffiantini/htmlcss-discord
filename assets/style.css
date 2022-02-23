@@ -25,7 +25,7 @@ Site_header
 
 #site_header {
     background-color: blue;
-    height: 500px;
+    height: 400px;
 }
 
 .header-header {
@@ -95,3 +95,47 @@ Site_main
 /********
 Site_footer
 *********/
+
+#site_footer {
+    background-color: indigo;
+    height: 400px;
+    position: relative;
+}
+
+.footer-main {
+    background-color: pink;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.big-footer-col {
+    float: left;
+    background-color: darksalmon;
+    width: 40%;
+    height: 100%;
+}
+
+.small-footer-col {
+    float: left;
+    background-color: violet;
+    width: 15%;
+    height: 100%;
+    border-left: solid;
+}
+
+.footer-footer {
+    background-color: darkorchid;
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+}
