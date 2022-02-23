@@ -12,6 +12,12 @@
     --site_header-height: 80vh;
     --site_main-section-height: 100vh;
     --site_footer-height: 80vh;
+    /* Font-size */
+    --site_header-header-font-size: 11px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -27,6 +33,16 @@
     position: relative;
 }
 
+.rounded-bar {
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.rounded-bar a {
+    color: black;
+}
+
 
 /********
 Site_header
@@ -40,14 +56,19 @@ Site_header
 }
 
 
-/* Site_header-header */
+/* site_header-header */
 
 #site_header-header {
-    background-color: aqua;
     width: 80%;
-    height: 10%;
+    height: 14%;
     margin: auto;
-    padding: 1%;
+}
+
+#site_header-header img {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .header-navbar ul {
@@ -60,18 +81,24 @@ Site_header
 
 .header-navbar li {
     display: inline-block;
+    margin: 0 1rem;
+    font-size: var(--site_header-header-font-size);
 }
 
 .header-navbar a {
-    text-decoration: none;
+    color: white;
 }
 
 #header-log-in-bar {
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 5%;
     transform: translate(0, -50%);
+    font-size: var(--site_header-header-font-size);
 }
+
+
+/* header-text-container */
 
 .header-text-container {
     background-color: aquamarine;
