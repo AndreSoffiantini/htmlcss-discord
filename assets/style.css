@@ -13,7 +13,18 @@
     --site_main-section-height: 100vh;
     --site_footer-height: 80vh;
     /* Font-size */
-    --site_header-header-font-size: 11px;
+    --site_header-header-fs: 11px;
+    --site_header-txt-cont-h1-fs: 2.5rem;
+    --site_header-txt-cont-p-fs: 15px;
+    /* Font-colors */
+    --site_header-font-color: white;
+    /* Bar-colors */
+    --log-in-bar-bg-color: white;
+    --log-in-bar-txt-color: black;
+    --mac-download-bar-bg-color: white;
+    --mac-download-bar-txt-color: black;
+    --discord-browser-bar-bg-color: black;
+    --discord-browser-bar-txt-color: white;
 }
 
 a {
@@ -21,7 +32,7 @@ a {
 }
 
 
-/* Utility */
+/***** Utility *****/
 
 .clearfix::after {
     content: "";
@@ -34,13 +45,43 @@ a {
 }
 
 .rounded-bar {
-    background-color: white;
+    background-color: limegreen;
     border-radius: 50px;
     padding: 10px;
+    display: inline-block;
 }
 
-.rounded-bar a {
-    color: black;
+
+/* Log-in bar */
+
+.log-in-bar {
+    background-color: var(--log-in-bar-bg-color);
+}
+
+.log-in-bar a {
+    color: var(--log-in-bar-txt-color);
+}
+
+
+/* Mac-download bar */
+
+.mac-download-bar {
+    background-color: var(--mac-download-bar-bg-color);
+}
+
+.mac-download-bar a {
+    color: var(--mac-download-bar-txt-color);
+}
+
+
+/* Discord-browser bar */
+
+.discord-browser-bar {
+    background-color: var(--discord-browser-bar-bg-color);
+}
+
+.discord-browser-bar a {
+    color: var(--discord-browser-bar-txt-color);
 }
 
 
@@ -82,29 +123,42 @@ Site_header
 .header-navbar li {
     display: inline-block;
     margin: 0 1rem;
-    font-size: var(--site_header-header-font-size);
+    font-size: var(--site_header-header-fs);
 }
 
 .header-navbar a {
-    color: white;
+    color: var(--site_header-font-color);
 }
 
-#header-log-in-bar {
+#site_header-log-in-bar {
     position: absolute;
     top: 50%;
     right: 5%;
     transform: translate(0, -50%);
-    font-size: var(--site_header-header-font-size);
+    font-size: var(--site_header-header-fs);
 }
 
 
-/* header-text-container */
+/* site_header-txt-cont */
 
-.header-text-container {
-    background-color: aquamarine;
-    width: 45%;
+#site_header-txt-cont {
+    /* background-color: aquamarine; */
+    width: 42%;
     height: 55%;
     margin: 6% auto;
+    text-align: center;
+}
+
+#site_header-txt-cont h1 {
+    color: var(--site_header-font-color);
+    margin-bottom: 2rem;
+    font-size: var(--site_header-txt-cont-h1-fs);
+}
+
+#site_header-txt-cont p {
+    color: var(--site_header-font-color);
+    font-size: var(--site_header-txt-cont-p-fs);
+    line-height: 22px;
 }
 
 
