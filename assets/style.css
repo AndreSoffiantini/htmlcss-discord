@@ -6,6 +6,37 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: green;
+
+/********
+Site_header
+*********/
+
+#site_header.debug {
+    background-color: blue;
+    height: 500px;
 }
+
+.header-header {
+    background-color: aqua;
+    width: 80%;
+    height: 10%;
+    margin: auto;
+}
+
+.header-text-container {
+    background-color: aquamarine;
+    width: 45%;
+    height: 55%;
+    margin: 6% auto;
+}
+
+
+}
+
+/********
+Site_main
+*********/
+
+/********
+Site_footer
+*********/
