@@ -6,12 +6,24 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+--root {}
+
 
 /********
 Site_header
 *********/
 
-#site_header.debug {
+#site_header {
     background-color: blue;
     height: 500px;
 }
@@ -31,11 +43,54 @@ Site_header
 }
 
 
-}
-
 /********
 Site_main
 *********/
+
+.main-section {
+    background-color: yellow;
+    height: 500px;
+    margin: 20px 0;
+}
+
+.main-section-container {
+    background-color: brown;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-img {
+    float: left;
+    width: 60%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.col-txt {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: beige;
+}
+
+#main-final-section {
+    height: 750px;
+}
+
+.row-txt {
+    background-color: chartreuse;
+    height: 20%;
+}
+
+.row-img {
+    background-color: cornflowerblue;
+    height: 60%;
+}
+
 
 /********
 Site_footer
