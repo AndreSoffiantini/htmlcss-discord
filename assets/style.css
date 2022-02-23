@@ -142,9 +142,7 @@ Site_header
 /* site_header-txt-cont */
 
 #site_header-txt-cont {
-    /* background-color: aquamarine; */
     width: 42%;
-    height: 55%;
     margin: 6% auto;
     text-align: center;
 }
@@ -192,16 +190,25 @@ Site_main
 
 .col-img {
     float: left;
-    width: 60%;
+    width: 67%;
     height: 100%;
     background-color: bisque;
 }
 
+.col-img img {
+    width: 37rem;
+}
+
 .col-txt {
     float: left;
-    width: 40%;
+    width: 33%;
     height: 100%;
     background-color: beige;
+}
+
+.col-txt h1 {
+    font-size: xxx-large;
+    margin: 2rem 0;
 }
 
 #main-final-section {
